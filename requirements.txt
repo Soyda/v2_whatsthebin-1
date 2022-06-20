@@ -5,3 +5,6 @@ pandas
 numpy 
 Pillow
 pytest
+sqlite3
+flask-login
+slask-sqlalchemy
