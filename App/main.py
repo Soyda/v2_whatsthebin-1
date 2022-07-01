@@ -51,10 +51,10 @@ def profile():
 # @main.route("/admin")
 # @roles_required('Admin')
 # def admin_page():
-#     return "If you're here that means you're an admin user"
+#     return "If you're here this means you're an admin user"
 
 # @main.route("/standard")
 # @roles_required('Standard')
 # def admin_page():
-#     return "If you're here that means you're a standard user"
+#     return "If you're here this means you're a standard user"
 
