@@ -12,3 +12,9 @@ SQLAlchemy==1.4.37
 Werkzeug==2.1.2
 zipp==3.8.0
 applicationinsights
+sentry-sdk[flask]
+pytest
+pytest-cov
+selenium
+webdriver_manager
+flask_testing
