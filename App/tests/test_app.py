@@ -3,7 +3,7 @@ from unicodedata import name
 from urllib import response
 from ..models import User
 from .. import app
-from werkzeug.security import generate_password_hash, check_password_hash
+# from werkzeug.security import generate_password_hash, check_password_hash
 import pytest
 
 
@@ -13,7 +13,7 @@ def test_new_user():
     assert user.password == "1234"
     assert user.name == "Jesuisuntest"
 
-def test_home_page():
+def test_index_page():
     with app.test_client() as test_client:
         response = test_client.get("/")
         assert response.status_code == 200
