@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+__pycache__
+other_models
+.DS_Store
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -128,5 +132,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+>>>>>>> 1992b1b (Initial commit)
 #pycharm files
 .idea/
