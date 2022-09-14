@@ -2,6 +2,7 @@ import io
 from operator import truediv
 import os
 import json
+from unicodedata import name
 from PIL import Image
 
 import torch
@@ -62,3 +63,5 @@ def web_cam():
     # some code to be implemented later
     pass
 
+if __name__=="__main__":
+    app.run(debug=True)
