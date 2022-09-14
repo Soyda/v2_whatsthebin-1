@@ -1,3 +1,5 @@
+.DS_Store
 __pycache__
 other_models
-.DS_Store
+.env
+command_azure.txt
