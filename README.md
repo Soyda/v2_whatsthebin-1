@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-# v2_whatsthebin
-=======
 <H1 align="center">
 Yolov7 Flask </H1>
 <h4 align = "center">
@@ -395,4 +393,6 @@ https://github.com/robmarkcole/yolov5-flask
 
 
 
->>>>>>> 4dba8e78e7d554cd7eea52ce8e5b064a46ce5f95
+=======
+# v2_whatsthebin
+>>>>>>> 1992b1b (Initial commit)
