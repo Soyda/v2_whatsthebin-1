@@ -58,3 +58,13 @@ def profile():
 # def admin_page():
 #     return "If you're here this means you're a standard user"
 
+@main.route('/classification')
+@login_required
+def classification():
+    return render_template("classification.html", model_type="Classification")
+
+# @main.route('/detection')
+# @login_required
+# def detection():
+#     return render_template("detection.html", model_type="Detection", test = "test")
+

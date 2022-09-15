@@ -33,6 +33,9 @@ app.register_blueprint(auth_blueprint)
 from .main import main as main_blueprint
 app.register_blueprint(main_blueprint)
 
+from .detection import detection as detection_blueprint
+app.register_blueprint(detection_blueprint)
+
 # def create_app():
 #     app = Flask(__name__)
 
