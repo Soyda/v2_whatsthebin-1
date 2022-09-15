@@ -36,6 +36,9 @@ app.register_blueprint(main_blueprint)
 from .detection import detection as detection_blueprint
 app.register_blueprint(detection_blueprint)
 
+from .classification import classification as classification_blueprint
+app.register_blueprint(classification_blueprint)
+
 # def create_app():
 #     app = Flask(__name__)
 

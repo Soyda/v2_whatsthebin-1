@@ -2,6 +2,7 @@ from flask import Blueprint, render_template
 from flask_login import login_required, current_user
 # from flask_security import roles_required
 from . import db, app
+import os
 
  # for monitoring with azure insights
 from applicationinsights.flask.ext import AppInsights
@@ -40,6 +41,11 @@ def index():
     app.logger.error('This is an error message')
     app.logger.critical('This is a critical message')
 
+    # remove image files from root
+    for file in os.listdir() :
+        if file.endswith(('.png', ".jpg", ".jpeg", ".webp", ".JPG", ".JPEG")):
+            os.remove(file) 
+
     return render_template("index.html")
 
 @main.route('/profile')
@@ -58,13 +64,4 @@ def profile():
 # def admin_page():
 #     return "If you're here this means you're a standard user"
 
-@main.route('/classification')
-@login_required
-def classification():
-    return render_template("classification.html", model_type="Classification")
-
-# @main.route('/detection')
-# @login_required
-# def detection():
-#     return render_template("detection.html", model_type="Detection", test = "test")
 

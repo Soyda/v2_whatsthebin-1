@@ -34,7 +34,7 @@
                             </a>
                             {% endif %}
                             {% if current_user.is_authenticated %}
-                            <a href="{{ url_for('main.classification') }}" class="navbar-item">
+                            <a href="{{ url_for('classification.classify') }}" class="navbar-item">
                                 Classication
                             </a>
                             <a href="{{ url_for('detection.detect') }}" class="navbar-item">

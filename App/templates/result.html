@@ -49,7 +49,7 @@
                         </a>
                         {% endif %}
                         {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.classification') }}" class="navbar-item">
+                        <a href="{{ url_for('classification.classify') }}" class="navbar-item">
                             Classication
                         </a>
                         <a href="{{ url_for('detection.detect') }}" class="navbar-item">
@@ -65,19 +65,23 @@
         </nav>
     </div>
 
-    <div class="hero-body">
-        <div class="container has-text-centered">
-           {% block content %}
-           {% endblock %}
-        </div>
-    </div>
+
 </section>
 
   <form class="form-signin card_res mb-6" method=post enctype=multipart/form-data>
-    <img class="mb-4" src="https://avatars.githubusercontent.com/u/85395001?v=4" width="120" style="border-radius:50%">
+    <!-- <section style="z-index: 0;position:relative;">
+      <div class="alert alert-warning" role="alert">
+        The image is saved in static/image0.jpg. Note that after an new inference, the result from the last run will be
+        erased.
+      </div>
+      <div class="alert alert-success" role="alert"> Running with model: {{ model_name }} </div>
+    </section> -->
+    <img class="mb-4" src="../static/assets/logo.png" width="120" style="border-radius:50%">
     <h1 class="h3 mb-3 font-weight-normal">Prediction:</h1>
     <img class="img-fluid" src={{ url_for('static', filename=result_image ) }} alt="User_Image" max-width="100%"
       height="auto">
+
+    {{results_table | safe}}
 
     <button class="btn mb-4"> Test Another Image </button>
     <p class="mt-5 mb-3 text-muted">Built using Pytorh and Flask, redesigned by Michael</p>
@@ -95,11 +99,6 @@
     crossorigin="anonymous"></script>
   <script src="/static/script.js"></script>
 
-  <div class="alert alert-warning" role="alert">
-    The image is saved in static/image0.jpg. Note that after an new inference, the result from the last run will be
-    erased.
-  </div>
-  <div class="alert alert-success" role="alert"> Running with model: {{ model_name }} </div>
 </body>
 
 <!-- Github Ribbon Start-->

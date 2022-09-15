@@ -53,8 +53,11 @@ def detect():
         results = get_prediction(img_bytes)
         results.save(save_dir='App/static')
         filename = 'image0.jpg'
-        
-        return render_template('result.html',result_image = filename,model_name = model_name)
+
+        table_results = results.pandas().xyxy[0].groupby("name").agg("count")
+        table_results["count"] = table_results["class"]
+
+        return render_template('result.html',result_image = filename,model_name = model_name, results_table=table_results["count"].to_frame().to_html())
 
     return render_template('detection.html')
 
