@@ -81,7 +81,7 @@
     <img class="img-fluid" src={{ url_for('static', filename=result_image ) }} alt="User_Image" max-width="100%"
       height="auto">
 
-    {{results_table}}
+    {{results_table | safe}}
 
     <button class="btn mb-4"> Test Another Image </button>
     <p class="mt-5 mb-3 text-muted">Built using Pytorh and Flask, redesigned by Michael</p>
