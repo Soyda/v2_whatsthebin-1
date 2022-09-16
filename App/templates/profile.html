@@ -4,4 +4,22 @@
 <h1 class="title">
   Welcome, {{name}}!
 </h1>
+<br/><br/><br/><br/>
+<h2 class="title">
+  Tu peux maintenant voir tes efforts au quotidien {{name}}!
+</h2><br/><br/>
+<img src="{{url_for('static', filename='piecharts.jpg')}}" align="middle" />
+<br/><br/><br/><br/>
+<h3 class="title">
+  Les chiffres des déchets ménagers en France
+</h3><br/><br/>
+<p>
+  Selon l’Ademe, chaque année un français produit 354 kg de déchets ménagers (hors déchets verts mais avec recyclage du verre et du carton).
+</p>
+<br/><br/>
+<img src="{{url_for('static', filename='poubelle.webp')}}" align="middle" />
+<br/><br/>
+<p>
+  Néanmoins, ces chiffres ne représentent que la partie émergée de l’iceberg des déchets produits en France chaque année. En prenant en compte les déchets professionnels (BTP, industrie, agriculture, activités de soin), on atteint 13,8 tonnes de déchets produits par an et par habitant.
+</p>
 {% endblock %}
