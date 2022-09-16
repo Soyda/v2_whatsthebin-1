@@ -53,6 +53,7 @@ def index():
 def profile():
     return render_template("profile.html", name=current_user.name)
 
+
 # TEST WITH ROLES
 # @main.route("/admin")
 # @roles_required('Admin')
