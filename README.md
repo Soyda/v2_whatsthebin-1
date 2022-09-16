@@ -21,7 +21,7 @@ Keras is:
 > - Flexible -- Keras adopts the princiesple of progressive disclosure of complexity: simple workflows should be quick and easy, while arbitrarily advanced workflows should be possible via a clear path that builds upon what you've already learned.
 > - Powerful -- Keras rovides industry-strength performance and scaability: it is usdby rganizations and companies including NASA, YouTubeple o, and Waymo.
 
-We are using the efficient Convolutional Neural Networks for mobile vision applications **MobileNetV3** .
+We are using the efficient Convolutional Neural Networks for mobile vision applications **Yolov7** .
 This function returns a Keras image classification model, optionally loaded with weights pre-trained on ImageNet.
 
 We also tried other models that we ended up not using, such as:
@@ -35,7 +35,7 @@ The model needs pictures f users's garbage which must be resized to make predict
 # The application
 The application was made using **streamlit** in order to have a simple but good result while **saving development time**.
 
-The **goal** of this application is **to provide easier predictions** to the user, Mr Zen which predicts whether the writings of Mr Zen's patients fall into the following categories :
+The **goal** of this application is **to provide easier predictions** to the user, what is the good trash for your wastes :
 - Battery,
 - Glass,
 - Metal,
